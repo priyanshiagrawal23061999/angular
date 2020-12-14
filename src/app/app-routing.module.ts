@@ -4,7 +4,11 @@ import {SchematicsModule} from '../app/schematics/schematics.module'
 
 const routes: Routes = [
   { path: 'schematics', loadChildren: () =>
-  import('./schematics/schematics.module').then((m) => m.SchematicsModule), }
+  import('./schematics/schematics.module').then((m) => m.SchematicsModule), },
+
+  // {path: "", redirectTo: "schematics"},
+
+  // {path: '**', redirectTo: 'schematics'}
 ];
 
 @NgModule({

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
-
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { from } from 'rxjs';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -21,13 +22,25 @@ export class DashboardComponent {
       }
 
       return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'Ethical Hacking', cols: 2, rows: 1 },
+        { title: 'Penetration Testing', cols: 1, rows: 1 },
+        { title: 'Cyber Security', cols: 1, rows: 2 },
+        { title: 'Infornation Security', cols: 1, rows: 1 }
       ];
     })
   );
+  arrImages: any;
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  
+  constructor(private breakpointObserver: BreakpointObserver,
+    private httpService: HttpClient) {
+    this.httpService.get('../dashboard/images.json').subscribe(
+      data => {
+         console.log(data);
+      },
+      (err: HttpErrorResponse) => {
+        console.log (err.message);
+      }
+    );
+  }
 }

@@ -28,6 +28,7 @@ import { TreeComponent } from './tree/tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
     FormsModule,
     MatSliderModule,
     MatInputModule,

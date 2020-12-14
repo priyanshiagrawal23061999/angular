@@ -17,6 +17,9 @@ children:[
   {path: "dashboard", component: DashboardComponent},
   {path: "tree", component: TreeComponent},
   {path: "dragdrop", component: DragDropComponent},
+  {path: '', component: DashboardComponent},
+  {path: '**', component: DashboardComponent}
+
 
 
 ]}
