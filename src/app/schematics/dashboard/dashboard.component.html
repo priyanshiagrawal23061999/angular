@@ -3,7 +3,7 @@
   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
-        <img *ngFor="let img of arrImages" src="img.image">
+        <!-- <img *ngFor="let img of arrImages" src="img.image"> -->
         <mat-card-header>
           <mat-card-title>
             {{card.title}}

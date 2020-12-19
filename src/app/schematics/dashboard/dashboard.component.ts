@@ -34,13 +34,13 @@ export class DashboardComponent {
   
   constructor(private breakpointObserver: BreakpointObserver,
     private httpService: HttpClient) {
-    this.httpService.get('../dashboard/images.json').subscribe(
-      data => {
-         console.log(data);
-      },
-      (err: HttpErrorResponse) => {
-        console.log (err.message);
-      }
-    );
+    // this.httpService.get('./images.json').subscribe(
+    //   data => {
+    //      console.log(data);
+    //   },
+    //   (err: HttpErrorResponse) => {
+    //     console.log (err.message);
+    //   }
+    // );
   }
 }
