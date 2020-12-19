@@ -1,74 +1,90 @@
+<!-- <nb-layout>
 
-    <p>
-    <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon (click)="drawer.toggle()">menu</mat-icon>
-      </button>
-      <span>My App</span>
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon profile-icon" aria-label="Example icon-button with profile icon">
-        <mat-icon>account_circle</mat-icon>
-      </button>
-      
-    </mat-toolbar>
-  </p>
+  <nb-layout-header fixed>
+   Insert header here 
+  </nb-layout-header>
 
-  
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-      <!-- <p>Auto-resizing sidenav</p>
-      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button> -->
-    <p> 
-      <mat-list>
-        <mat-list-item  
-        routerLink="/schematics/dashboard/">Dashboard</mat-list-item>
-        <mat-divider></mat-divider>
-        <mat-list-item   
-        routerLink="/schematics/dragdrop/">drag-drop</mat-list-item>
-        <mat-divider></mat-divider>
-        <mat-list-item   
-        routerLink="/schematics/forms/">forms</mat-list-item>
-        <mat-divider></mat-divider>
-
-        <mat-list-item 
-        routerLink="/schematics/navigation/">navigation</mat-list-item>
-        <mat-divider></mat-divider>
-        <mat-list-item 
-        routerLink="/schematics/table/">table</mat-list-item>
-        <mat-divider></mat-divider>
-        <mat-list-item 
-        routerLink="/schematics/tree/">tree</mat-list-item>
-      
-      </mat-list>
-    </p>      
-    </mat-drawer>
-  
-   
-      <!-- <h1 [appHighlight]="color">My First Attribute Directive</h1>
-
-<h2>Pick a highlight color</h2>
-<div>
-  <input type="radio" name="colors" (click)="color='lightgreen'">Green
-  <input type="radio" name="colors" (click)="color='yellow'">Yellow
-  <input type="radio" name="colors" (click)="color='cyan'">Cyan
-</div>
-<p [appHighlight]="color">Highlight me!</p>
-
-<p [appHighlight]="color" defaultColor="violet">
-  Highlight me too!
-</p> -->
-<router-outlet></router-outlet>
+  <nb-layout-column> -->
 
     
-  </mat-drawer-container>
-  
+        <p>
+        <mat-toolbar color="primary">
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+          </button>
+          <span>My App</span>
+          <span class="example-spacer"></span>
+          <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon profile-icon" aria-label="Example icon-button with profile icon">
+            <mat-icon>account_circle</mat-icon>
+          </button>
+          
+        </mat-toolbar>
+      </p>
+    
+      
+    <mat-drawer-container class="example-container" autosize>
+        <mat-drawer #drawer class="example-sidenav" mode="side">
+          <!-- <p>Auto-resizing sidenav</p>
+          <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+          <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+          </button> -->
+        <p> 
+          <mat-list>
+            <mat-list-item  
+            routerLink="/schematics/dashboard/">Dashboard</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item   
+            routerLink="/schematics/dragdrop/">drag-drop</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item   
+            routerLink="/schematics/forms/">forms</mat-list-item>
+            <mat-divider></mat-divider>
+    
+            <mat-list-item 
+            routerLink="/schematics/navigation/">navigation</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item 
+            routerLink="/schematics/table/">table</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item 
+            routerLink="/schematics/tree/">tree</mat-list-item>
+          
+          </mat-list>
+        </p>      
+        </mat-drawer>
+      
+       
+          <!-- <h1 [appHighlight]="color">My First Attribute Directive</h1>
+    
+    <h2>Pick a highlight color</h2>
+    <div>
+      <input type="radio" name="colors" (click)="color='lightgreen'">Green
+      <input type="radio" name="colors" (click)="color='yellow'">Yellow
+      <input type="radio" name="colors" (click)="color='cyan'">Cyan
+    </div>
+    <p [appHighlight]="color">Highlight me!</p>
+    
+    <p [appHighlight]="color" defaultColor="violet">
+      Highlight me too!
+    </p> -->
+    <router-outlet></router-outlet>
+    
+        
+      </mat-drawer-container>
+      
+    
+    
+  <!-- </nb-layout-column> -->
 
+  <!-- <nb-layout-footer fixed>
+   Insert footer here 
+  </nb-layout-footer> -->
+
+<!-- </nb-layout> -->

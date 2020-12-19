@@ -9,6 +9,8 @@ import {
 @Component({
   selector: "ngx-login",
   templateUrl: "./login.component.html",
+  styleUrls: ['./../auth.css'],
+
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoginComponent extends NbLoginComponent {

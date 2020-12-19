@@ -6,6 +6,9 @@ const routes: Routes = [
   { path: 'schematics', loadChildren: () =>
   import('./schematics/schematics.module').then((m) => m.SchematicsModule), },
 
+  { path: 'auth', loadChildren: () =>
+  import('./auth/auth.module').then((m) => m.AuthModule), },
+
   // {path: "", redirectTo: "schematics"},
 
   // {path: '**', redirectTo: 'schematics'}
